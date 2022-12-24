@@ -26,10 +26,9 @@ Ao completar, não esqueça de publicar no linkedin e adicionar #handsOnRoadmap
 
 <br />
 
-Imagine que foi pedido a você fazer um pequeno mostruário para uma loja local.
+Imagine que foi pedido a você para fazer uma página de cadastro simples.
 
-A ideia não é efetuar vendas, apenas mostrar os produtos. Porque essa loja tem alcance local, mas quer demonstrar o que está sendo vendido na loja e se há algum desconto.
-
+Nesse cadastro o objetivo é que se recolha dados das pessoas sobre que tipo de filmes e séries a pessoa gosta de assistir.
 <br />
 
 ## :dart: Os requisitos<a name="id01.2"></a>
@@ -42,9 +41,23 @@ Sua aplicação deve ter:
 
 <br />
 
-- Uma página que liste todos os produtos diversos da loja.
-- Se um produto tiver a tag desconto é preciso passar o preço antigo riscado, e qual o novo preço.
-- Produtos com desconto devem tem alguma representação visual que indique que estão em desconto.
+- Uma página de formulário que conste com os campos:
+  - nome completo
+  - idade
+  - sexo
+  - e-mail
+  - cpf
+  - gerêro preferido de filmes e/ou séries
+  - segundo genêro de preferência
+  - terceiro genêro de preferência
+  - Um campo de preferência com opções filmes curtos, filmes longos, mini séries e séries, em que só se pode escolher uma opção.
+- Ao concluir e confirmar com o botão o formulário some, e aparece no lugar uma mensagem de agradecimento.
+- Na parte da mensagem deve ter um botão para responder novamente a pesquisa, que retorna para a pesquisa com todos os campos zerados.
+- Os campos idade, sexo, e-mail e toda parte de pesquisa sobre conteúdo deve ser obrigatória.
+- Os campos de nome e cpf são opcionais.
+- A página de agradecimento deve também mostrar as respostar anteriores, mas não como ampos de input, apenas mostrando as perguntas e respostas.
+
+#obs: nenhum dado deve ser realmente armazenado. Se acaso for armazenar dados busque sobre como tratar os dados sensíveis como cpf. Essa proposta é fictícia e só deve ter objetivo de treino.
 
 ### :dart: Requisitos não funcionais <a name="id01.2.2"></a>
 
@@ -54,8 +67,10 @@ Sua aplicação deve ter:
 
 - ReactJs
 - fazer deploy
-- Renderização de um iterável, que é a lista de produtos.
-- Criar um componente para produto, então renderizar todos usando esse componente reutilizável
+- Usar formulários controlados do ReactJS.
+- Não utilização de formik, useForm ou qualquer outra forma de gerenciador de forms.
+- A aplicação deve ter uma rota só, sendo a página de agradecimento apenas um componente que tem sua visualização condicionada.
+- O uso de yup é opcional.
 
 <br />
 
@@ -72,7 +87,6 @@ Você será bem avaliado se usar:
 - organizar e dividir bem os arquivos
 - Componentizar e separar bem o que achar que deve
 - Usar typeScript
-- Adicionar fotos aos produtos, que fiquem numa pasta imagens dentro do projeto. (adicionar um campo a mais no db.js para ser relativo a imagem, contendo o caminho da imagem)
 
 <br />
 
@@ -124,11 +138,15 @@ Antes ou depois de realizar esse desafio, você pode pegar desafios parecidos do
 
 O segredo aqui é fazer modelos parecidos até ganhar algum conforto com fazer algo com essas técnicas e esse modelo de desafio, então quem sabe pegar outros mais difíceis.
 
-[Notifications page](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC)
+[Base Apparel coming soon page](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0)
 
 <br>
 
-[Testimonials grid section](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)
+[Intro component with sign-up form](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1)
+
+<br>
+
+[Interactive card details form](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw)
 
 <br>
 
